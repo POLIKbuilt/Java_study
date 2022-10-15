@@ -1,4 +1,4 @@
-public class module {
+public class operator {
 	public static void main() {
 		enum Size {SMALL, MEDIUM};
 		Size s = Size.MEDIUM;
