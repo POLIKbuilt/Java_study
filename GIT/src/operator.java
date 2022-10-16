@@ -1,8 +1,20 @@
 import java.io.*;
 import java.text.*;
 import java.util.*;
+import java.lang.System;
+import java.nio.file.Paths;
 
 public class operator {
+	static char[] readPassword(String prompt, Object... args) {
+		Scanner in = new Scanner(System.in);
+		String name = in.nextLine();
+		return name.toCharArray();
+	}
+	static String readLine(String prompt, Object... args) {
+		Scanner instring = new Scanner(System.in);
+		String fullname = instring.nextLine();
+		return fullname;
+	}
 	public static void main(String[] args) {
 		int i = 1;
 		int counter = 0;
@@ -46,6 +58,14 @@ public class operator {
 		builder.append(greeting);
 		String completedString = builder.toString();
 		System.out.println(completedString);
+		System.out.printf("%,.2f", 10000.0 / 3.0);
+		System.out.println();
+		System.out.printf("%tc", new Date());
+		System.out.println();
+		System.out.printf("%1$s %2$tB %2$te, %2$tY", "Due date:", new Date());
+		Scanner infile = new Scanner(Paths.get("resources", "myfile.txt"));
 		
-		}
+		
+	}
 }
+
