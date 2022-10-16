@@ -65,7 +65,6 @@ public class operator {
 		System.out.println();
 		System.out.printf("%1$s %2$tB %2$te, %2$tY \n", "Due date:", new Date());
 		File newObj = new File("myfile.txt");
-		/*
 		if (newObj.createNewFile()) {
 		 
 			System.out.println("File created: " + newObj.getName());
@@ -73,7 +72,7 @@ public class operator {
 		else {
 			System.out.println("File already exists.");
 		}
-		*/
+		
 		FileWriter newWriter = new FileWriter("myfile.txt");
 		newWriter.write("files are so fucking stupid in Java.");
 		newWriter.close();
