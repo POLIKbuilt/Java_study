@@ -25,13 +25,18 @@ public class operator {
 		int cp = greeting.codePointAt(index);
 		System.out.println(cp);
 		int q = 0;
-		while(q < greeting.length() || counter <= greeting.length()) {
-			q = greeting.indexOf("lo",counter);
-			counter++;
-			System.out.println(counter);
-			if(counter == greeting.length()) {
-				break;
+		if(greeting != null && greeting.length() != 0) {
+			while(q < greeting.length() || counter <= greeting.length()) {
+				q = greeting.indexOf("lo",counter);
+				counter++;
+				System.out.println(counter);
+				if(counter == greeting.length()) {
+					break;
+				}
 			}
 		}
+		String all = String.join("/ ","s","m","l","xl");
+		System.out.println(all);
+		
 	}
 }
