@@ -4,13 +4,13 @@ public class operator {
 		enum Size {SMALL, MEDIUM};
 		Size s = Size.SMALL;
 		System.out.println(s);
-		String e = ""; // an empty string
+		String e = "  ";
 		String greeting = "Hello";
 		String g = greeting.substring(1, 3);
 		System.out.println(g);
 		String expletive = "Expletive";
 		String PG13 = "deleted";
-		String message = expletive + " " + PG13;
+		String message = expletive + e + PG13;
 		System.out.println(message);
 		boolean f = greeting.equalsIgnoreCase("hell");
 		if (PG13.length() == 0) {
