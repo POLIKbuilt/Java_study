@@ -15,7 +15,7 @@ public class operator {
 		String fullname = instring.nextLine();
 		return fullname;
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		int i = 1;
 		int counter = 0;
 		enum Size {SMALL, MEDIUM};
@@ -63,7 +63,8 @@ public class operator {
 		System.out.printf("%tc", new Date());
 		System.out.println();
 		System.out.printf("%1$s %2$tB %2$te, %2$tY", "Due date:", new Date());
-		Scanner infile = new Scanner(Paths.get("resources", "myfile.txt"));
+		Scanner infile = new Scanner(Paths.get("myfile.txt"), "UTF-8");
+	    
 		
 		
 	}
