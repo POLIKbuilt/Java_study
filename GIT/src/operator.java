@@ -3,6 +3,7 @@ import java.text.*;
 import java.util.*;
 import java.lang.System;
 import java.nio.file.Paths;
+import java.io.IOException;
 
 public class operator {
 	static char[] readPassword(String prompt, Object... args) {
@@ -62,9 +63,21 @@ public class operator {
 		System.out.println();
 		System.out.printf("%tc", new Date());
 		System.out.println();
-		System.out.printf("%1$s %2$tB %2$te, %2$tY", "Due date:", new Date());
-		Scanner infile = new Scanner(Paths.get("myfile.txt"), "UTF-8");
-	    
+		System.out.printf("%1$s %2$tB %2$te, %2$tY \n", "Due date:", new Date());
+		File newObj = new File("myfile.txt");
+		/*
+		if (newObj.createNewFile()) {
+		 
+			System.out.println("File created: " + newObj.getName());
+		}
+		else {
+			System.out.println("File already exists.");
+		}
+		*/
+		FileWriter newWriter = new FileWriter("myfile.txt");
+		newWriter.write("files are so fucking stupid in Java.");
+		newWriter.close();
+		System.out.println("Successfully edited file.");
 		
 		
 	}
