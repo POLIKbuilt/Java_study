@@ -1,11 +1,13 @@
 public class operator {
 	public static void main(String[] args) {
 		int i = 1;
+		int counter = 0;
 		enum Size {SMALL, MEDIUM};
 		Size s = Size.SMALL;
 		System.out.println(s);
 		String e = "  ";
-		String greeting = "Hello";
+		String greeting = "Hellolololo";
+		System.out.println("greeting length == " + greeting.length());
 		String g = greeting.substring(1, 3);
 		System.out.println(g);
 		String expletive = "Expletive";
@@ -22,5 +24,14 @@ public class operator {
 		int index = greeting.offsetByCodePoints(0, i);
 		int cp = greeting.codePointAt(index);
 		System.out.println(cp);
+		int q = 0;
+		while(q < greeting.length() || counter <= greeting.length()) {
+			q = greeting.indexOf("lo",counter);
+			counter++;
+			System.out.println(counter);
+			if(counter == greeting.length()) {
+				break;
+			}
+		}
 	}
 }
