@@ -76,9 +76,6 @@ public class operator {
 		FileWriter newWriter = new FileWriter("resources\\myfile.txt");
 		newWriter.write("files are so fucking stupid in Java.");
 		newWriter.close();
-		FileWriter newWriter2 = new FileWriter("myfile.txt");
-		newWriter2.write("shit i've done this.");
-		newWriter2.close();
 		System.out.println("Successfully edited files.");
 		
 		
