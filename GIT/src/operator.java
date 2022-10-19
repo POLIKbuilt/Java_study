@@ -77,6 +77,7 @@ public class operator {
 		newWriter.write("files are so fucking stupid in Java.");
 		newWriter.close();
 		System.out.println("Successfully edited files.");
+		//how to feel alivw in this fucking life i dont know nothing surely 
 		
 		
 	}
